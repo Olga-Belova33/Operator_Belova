@@ -13,7 +13,10 @@ public class Main {
             sum = amount + ost;
         }
         System.out.println("Итого на счете:" + sum);
-        System.out.println("Начислено бонусов:" + bonus);
+        if (amount >= 1000) {
+            System.out.println("Начислено бонусов:" + bonus);
+        } else {
+            System.out.println("Начислено бонусов: 0");
+        }
     }
-}
 }
